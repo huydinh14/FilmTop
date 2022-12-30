@@ -50,7 +50,7 @@ const userApi = {
             return { error }
         }
     },
-    signup: async ({ }) => {
+    signup: async () => {
         try {
 
         } catch (error) {
@@ -58,3 +58,5 @@ const userApi = {
         }
     },
 }
+
+export default userApi

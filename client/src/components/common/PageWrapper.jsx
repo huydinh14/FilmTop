@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { setAppState } from '../../redux/features/appStateSlice'
 
@@ -8,7 +8,7 @@ export default function PageWrapper({ state, children }) {
     useEffect(() => {
         window.scrollTo(0, 0)
         dispatch(setAppState(state))
-    }, [state])
+    }, [state, dispatch])
 
     return (
         children
